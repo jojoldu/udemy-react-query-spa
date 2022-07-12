@@ -18,6 +18,7 @@
     "@typescript-eslint/eslint-plugin": "^4.8.1",
     "@typescript-eslint/parser": "^4.7.0",
     "axios": "^0.24.0",
+    "class-transformer": "^0.5.1",
     "dayjs": "^1.10.4",
     "eslint": "^7.13.0",
     "eslint-config-airbnb": "^18.2.1",
@@ -50,6 +51,10 @@
     "typescript": "^4.2.4",
     "web-vitals": "^1.1.1"
   },
+  "devDependencies": {
+    "jest": "^28.1.2",
+    "ts-jest": "^28.0.5"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -69,6 +74,21 @@
     ]
   },
   "jest": {
-    "resetMocks": false
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": ".",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coverageDirectory": "./coverage",
+    "testEnvironment": "node"
   }
 }
