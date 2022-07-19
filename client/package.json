@@ -39,8 +39,8 @@
     "framer-motion": "^3.10.6",
     "image-webpack-loader": "^7.0.1",
     "prettier": "^2.2.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "react-icons": "^4.2.0",
     "react-query": "^3.39.1",
     "react-router": "^5.2.0",
@@ -52,8 +52,8 @@
     "web-vitals": "^1.1.1"
   },
   "devDependencies": {
-    "jest": "^28.1.2",
-    "ts-jest": "^28.0.5"
+    "jest": "26.6.0",
+    "ts-jest": "26.5.6"
   },
   "scripts": {
     "start": "react-scripts start",
