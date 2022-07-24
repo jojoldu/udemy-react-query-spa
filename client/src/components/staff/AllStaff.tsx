@@ -12,9 +12,7 @@ export function AllStaff(): ReactElement {
 
   return (
     <Box>
-      <Heading mt={10} align="center">
-        Our Staff
-      </Heading>
+      <Heading mt={10}>Our Staff</Heading>
       <HStack m={10} spacing={8} justify="center">
         {staff.map((staffData) => (
           <Staff key={staffData.id} staffData={staffData} />

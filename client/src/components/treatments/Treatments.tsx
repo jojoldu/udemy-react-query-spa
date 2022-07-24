@@ -9,9 +9,7 @@ export function Treatments(): ReactElement {
   const treatments = useTreatments();
   return (
     <Box>
-      <Heading mt={10} align="center">
-        Available Treatments
-      </Heading>
+      <Heading mt={10}>Available Treatments</Heading>
       <HStack m={10} spacing={8} justify="center">
         {treatments.map((treatmentData) => (
           <Treatment key={treatmentData.id} treatmentData={treatmentData} />

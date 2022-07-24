@@ -69,9 +69,7 @@ export function UserAppointments(): ReactElement | null {
 
   return (
     <Box>
-      <Heading mt={10} align="center">
-        Your Appointments
-      </Heading>
+      <Heading mt={10}>Your Appointments</Heading>
       <Center>
         {userAppointments.length > 0 ? (
           <AppointmentsTable userAppointments={userAppointments} />
